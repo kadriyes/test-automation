@@ -19,7 +19,7 @@ public class DemoQATest {
         // Web sayfasını açma
         driver.get("https://demoqa.com/elements");
 
-        WebDriverWait wait = new WebDriverWait(driver, 3);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class='element-list collapse show'] li[id='item-4'] span[class='text']")));
 
 
